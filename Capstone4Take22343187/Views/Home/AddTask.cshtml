@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "AddTask";
+}
+
+<h1>AddTask</h1>
+
+<form action="../Home/AddTask" method="post">
+    <input type="text" name="TaskName" placeholder="TaskName" />
+    <input type="text" name="TaskDescription" placeholder="Description" />
+    <input type="date" name="DueDate" />
+    <input type="submit" class="btn-dark" value="Submit!" />
+
+</form>

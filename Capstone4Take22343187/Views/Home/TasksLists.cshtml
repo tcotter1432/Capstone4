@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "TasksLists";
+}
+
+<h1>TasksLists</h1>
+
+@model List<Tasks>
+
+<table>
+    <tr>
+        <th>Task Name</th>
+        <th>Description</th>
+        <th>Due Date</th>
+        <th></th>
+    </tr>
+    @foreach (Tasks task in Model)
+    {
+<tr>
+    <td>@task.TaskName</td>
+    <td>@task.TaskDescription</td>
+    <td>@task.DueDate</td>
+    <td><a href="../Home/DeleteTask?@task.TaskId">Delete Task</a></td>
+    <td><a href="../Home/UpdateTask?@task.TaskId">Update Task</a></td>
+</tr>
+    }
+</table>
+
+<a href="../Home/AddTask">Delete task</a>

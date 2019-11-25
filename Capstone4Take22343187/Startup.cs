@@ -12,6 +12,7 @@ using Capstone4Take22343187.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Capstone4Take22343187.Models;
 
 namespace Capstone4Take22343187
 {
@@ -28,6 +29,9 @@ namespace Capstone4Take22343187
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")))
+                .AddDbContext<TaskListDBContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)

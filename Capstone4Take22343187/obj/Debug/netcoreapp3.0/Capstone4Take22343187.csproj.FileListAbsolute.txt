@@ -135,3 +135,4 @@ C:\Users\Tristan\Documents\BootCamp\Capstone4Take22343187\Capstone4Take22343187\
 C:\Users\Tristan\Documents\BootCamp\Capstone4Take22343187\Capstone4Take22343187\obj\Debug\netcoreapp3.0\Capstone4Take22343187.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Tristan\Documents\BootCamp\Capstone4Take22343187\Capstone4Take22343187\obj\Debug\netcoreapp3.0\Razor\Views\Home\TasksLists.cshtml.g.cs
 C:\Users\Tristan\Documents\BootCamp\Capstone4Take22343187\Capstone4Take22343187\obj\Debug\netcoreapp3.0\Razor\Views\Home\AddTask.cshtml.g.cs
+C:\Users\Tristan\Documents\BootCamp\Capstone4Take22343187\Capstone4Take22343187\obj\Debug\netcoreapp3.0\Razor\Views\Home\UpdateTask.cshtml.g.cs
